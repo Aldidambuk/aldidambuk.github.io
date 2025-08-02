@@ -336,6 +336,75 @@ section {
 }
 /* end untuk home,about,portfolio,contact */
 
+/* ============= Form =============  */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+  color: var(--color-succes);
+}
+
+.contact__form input[type="text"] {
+  width: 50%;
+  color: var(--color-light);
+}
+
+.contact__form input[type="email"] {
+  width: 100%;
+  color: var(--color-light);
+}
+
+.contact__form textarea {
+  width: 100%;
+  color: var(--color-light);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg);
+}
+
+.contact__form .btn {
+  width: max-content;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* ============= Responsive Media Queries (Tablets) =============  */
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+/* end untuk form contac  */
+
 /* KEYFRAME ANIMATION */
 @keyframes showRight {
   100% {

@@ -53,7 +53,21 @@
       </div>
       <div class="row justify-content-center mb-3">
         <div class="col-md-6">
-          <form>
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <form action="https://formspree.io/f/xrbkjelq" method="POST" class="contact__form">
+            <div class="form__name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            
+            <input type="email" name="Email Address" placeholder="Your Email Address" required>
+            <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            
+        </form>
+
+          <!-- <form action="https://formspree.io/f/xrbkjelq" method="POST">
             <div class="mb-3">
               <label for="name" class="form-label">nama lengkap</label>
               <input type="text" class="form-control" id="name" aria-describedby="name">
@@ -63,11 +77,11 @@
               <input type="email" class="form-control" id="email" aria-describedby="email">
             </div>
             <div class="mb-3">
-              <label for="pesan" class="form-label">pesan</label>
+              <label for="text" class="form-label">pesan</label>
               <textarea class="form-control" id="pesan" rows="3"></textarea>
             </div>
             <button type="submit" id="btn">kirim</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
